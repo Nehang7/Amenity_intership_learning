@@ -1,0 +1,32 @@
+##If-Else Statement
+a = int(input("Enter a age: "))
+print("Your Age is", a)
+
+if a >= 18:
+    print("You are eligible for voting")
+else:
+    print("You are not eligible for voting")
+    
+##else-if Statement
+
+num = int(input("Enter a number: "))
+
+if num < 0:
+    print("The number is negative")     
+elif num == 0:
+    print("The number is zero")
+else:
+    print("The number is positive")
+    
+##nested if-else Statement
+
+x = int(input("Enter a number: "))
+if x < 0:
+    print("The number is negative")
+elif x >0:
+    if x % 2 == 0:
+        print("The number is positive and even")
+    else:
+        print("The number is positive and odd")
+else:
+    print("The number is zero")

@@ -1,0 +1,13 @@
+x = input("Enter a value: ")
+
+match x:
+    case "1":
+        print("You entered 1")
+    case "2":
+        print("You entered 2")
+    case _ if x<"0":
+        print("You entered a negative value")
+    case _ if x.isnumeric():
+        print("You entered a numeric value",x)
+    case _:
+        print("You entered something else")
