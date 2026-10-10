@@ -1,0 +1,21 @@
+import random
+import string
+
+passlen = 8
+
+pass_values = string.ascii_letters + string.digits + string.punctuation
+
+print("with list comprehension")
+# list comprehension[function for i in range(n)]
+password = "".join(random.choice(pass_values) for i in range(passlen))
+
+print("Your password is:", password)
+
+print("with for loop")
+
+password = ""
+for i in range(passlen):
+
+    password += random.choice(pass_values)
+
+print("Your password is:", password)

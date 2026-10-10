@@ -1,9 +1,6 @@
-i=0
+i = 0
 while True:
-     print(i)
-     i=i+1
-     if i>=10:
+    print(i)
+    i += 1
+    if i >= 10:
         break
-    
-    
-     

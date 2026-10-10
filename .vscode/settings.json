@@ -1,0 +1,10 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.autoIndent": "full",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "editor.formatOnSave": true
+}

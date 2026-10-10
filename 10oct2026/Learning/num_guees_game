@@ -1,0 +1,30 @@
+import random
+
+
+def guess_number_game():
+    Target = random.randint(1, 100)
+    guesses = 0
+    while True:
+
+        print("Enter a number between 1 and 100.")
+        guess = int(input("Enter your guess: "))
+        guesses += 1
+        if guess == Target:
+            print("You guessed the correct number.")
+            print("How many guesses you made:", guesses)
+            break
+        elif guess < Target:
+            print("Your guess is too low. Try again.try bigger number.")
+
+        else:
+            print("Your guess is too high. Try again. try smaller number.")
+
+    play_again = input("Do you want to continue play again? enter(y/n): ")
+    if play_again.strip().lower() == "y":
+        guess_number_game()
+    else:
+        print("Thank you for playing the game.")
+
+
+if __name__ == "__main__":
+    guess_number_game()
