@@ -1,0 +1,23 @@
+l = [11, 45, 4, 7, 23, 69, "hello"]
+print(l, type(l))
+l.append(100)
+print(l)
+print(l[1])
+print(l[1:4])
+print(l[1:4:2])
+print(l[-1])
+l.reverse()
+print(l)
+l.sort()
+print(l)
+l.remove(45)
+print(l)
+print(l.index(23))
+m = [1, 2, 3, 4]
+print(m)
+m.extend(l)
+print(m)
+k = m + l
+print(k)
+l.insert(2, 200)
+print(l)
