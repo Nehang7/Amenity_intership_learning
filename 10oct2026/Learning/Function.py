@@ -1,6 +1,6 @@
 def gmean(a, b):
     mean = (a * b) / (a + b)
-    return mean
+    print (mean)
 
 
 def compare(a, b):
